@@ -1,5 +1,6 @@
 import yt_dlp
 import os
+import platform
 
 
 def download_video(url, output_path="."):
@@ -15,10 +16,16 @@ def download_video(url, output_path="."):
 
 
 if __name__ == "__main__":
-    # Get the current user's desktop path
-    desktop_path = os.path.join(
-        os.path.join(os.environ["USERPROFILE"]), "Desktop"
-    )  # For Windows
+    # Get the current user's desktop path based on the OS
+    system_name = platform.system()
+
+    if system_name == "Windows":  # For Windows
+        desktop_path = os.path.join(os.environ["USERPROFILE"], "Desktop")
+    elif system_name == "Linux" or system_name == "Darwin":  # For Linux or macOS
+        desktop_path = os.path.join(os.environ["HOME"], "Desktop")
+    else:
+        print(f"Unsupported OS: {system_name}")
+        exit(1)
 
     # Ask for the video URL
     video_url = input("Enter the YouTube video URL: ")

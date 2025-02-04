@@ -1,7 +1,7 @@
 # Youtube Video Downloader
 
-**Make sure you have pip, python and ffmpeg installed.**
-To use the downloader, run the following commands on windows:
+**Make sure you have pip, python and [ffmpeg](https://www.ffmpeg.org/) installed. Works on Windows, Linux and Mac.**<br>
+To use the downloader, run the following commands:
 ```bash
 git clone https://github.com/nabeel-sadiq/yt-downloader.git
 cd yt-downloader

@@ -1,4 +1,4 @@
-# Youtube Video Downloader
+# Internet Video Downloader
 
 **Make sure you have pip, python and [ffmpeg](https://www.ffmpeg.org/) installed. Works on Windows, Linux and Mac.**<br>
 To use the downloader, run the following commands:

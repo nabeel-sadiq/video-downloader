@@ -4,6 +4,7 @@
 To use the downloader, run the following commands on windows:
 ```bash
 git clone https://github.com/nabeel-sadiq/yt-downloader.git
+cd yt-downloader
 pip install -r requirements.txt
 python run main.py
 ```
